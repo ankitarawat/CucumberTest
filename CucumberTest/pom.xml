@@ -49,9 +49,9 @@
                     </configuration>
                     <executions>
                         <execution>
-                            <id>Runnerclass</id>
-                            <phase>integration-test</phase>
-                            <goals>
+                          <id>Runnerclass</id>
+                          <phase>integration-test</phase>
+                          <goals>
                                 <goal>integration-test</goal>
                             </goals>
                         </execution>

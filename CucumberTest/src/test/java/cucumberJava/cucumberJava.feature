@@ -1,4 +1,4 @@
-Feature: CucumberJava
+Feature: cucumberJava
 
 Scenario: Login functionality exists
 

@@ -1,8 +1,10 @@
 package cucumberJava; 
 
 import org.openqa.selenium.By; 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver; 
 import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.remote.DesiredCapabilities;
+//import org.openqa.selenium.remote.RemoteWebDriver;
 
 import cucumber.annotation.en.Given; 
 import cucumber.annotation.en.Then; 
@@ -13,12 +15,15 @@ public class cucumberJava {
 	
    @Given("^I have open the browser$") 
    public void openBrowser() { 
-	  System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
-      driver = new ChromeDriver();
+	  	 System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
+	  	//WebDriver driver = new RemoteWebDriver("http://localhost:9515", DesiredCapabilities.chrome());
+	  	 /*System.getProperty("webdriver.chrome.driver");*/
+         driver = new ChromeDriver(); 
    } 
 	
    @When("^I open Facebook website$") 
    public void goToFacebook() { 
+	   
       driver.navigate().to("https://www.facebook.com/"); 
    } 
 	
